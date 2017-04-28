@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/fanfairSystemsInc/AmplifyPhpClient.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "fanfairSystemsInc/AmplifyPhpClient": "*@dev"
   }
 }
 ```
@@ -58,6 +58,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
@@ -138,5 +139,3 @@ Class | Method | HTTP request | Description
 ## Author
 
 development@iqxcorp.com
-
-
