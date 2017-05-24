@@ -1,6 +1,6 @@
 # Swagger\Client\StoresApi
 
-All URIs are relative to *http://localhost:3005/V1*
+All URIs are relative to *https://public-api.iqxamplify.com/V1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,6 +23,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
@@ -73,6 +74,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
@@ -119,6 +121,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 

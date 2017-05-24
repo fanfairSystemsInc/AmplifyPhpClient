@@ -84,11 +84,18 @@ class Configuration
     protected $defaultHeaders = [];
 
     /**
+     * Is in Sanbox Mode
+     *
+     * @var boolean
+     */
+    protected $sandboxMode = false;
+
+    /**
      * The host
      *
      * @var string
      */
-    protected $host = 'http://localhost:3005/V1';
+    protected $host = 'https://public-api.iqxamplify.com/V1';
 
     /**
      * Timeout (second) of the HTTP request, by default set to 0, no timeout
@@ -610,6 +617,24 @@ class Configuration
     public function getDebugFile()
     {
         return $this->debugFile;
+    }
+
+    /**
+     * Sets tsandbox mode
+     *
+     * @param boolean $tempFolderPath Temp folder path
+     *
+     * @return Configuration
+     */
+    public function setSandboxMode($sandboxMode)
+    {
+        $this->sandboxMode = $sandboxMode;
+        if ($sandboxMode == true) {
+          $host = 'https://public-api.iqxamplify.com/V1';
+        } else {
+          $host = 'https://sandbox-public-api.iqxamplify.com/V1';
+        }
+        return $this;
     }
 
     /**
