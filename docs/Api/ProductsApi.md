@@ -23,6 +23,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
@@ -60,7 +61,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findProducts**
-> \Swagger\Client\Model\Product[] findProducts()
+> \Swagger\Client\Model\Products findProducts($page)
 
 Retrieve all products
 
@@ -73,13 +74,15 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ProductsApi();
+$page = 3.4; // float | The page number ro return
 
 try {
-    $result = $api_instance->findProducts();
+    $result = $api_instance->findProducts($page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ProductsApi->findProducts: ', $e->getMessage(), PHP_EOL;
@@ -88,11 +91,14 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **float**| The page number ro return | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Product[]**](../Model/Product.md)
+[**\Swagger\Client\Model\Products**](../Model/Products.md)
 
 ### Authorization
 
@@ -119,6 +125,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setSandboxMode(true);
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 

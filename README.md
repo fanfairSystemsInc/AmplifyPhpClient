@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/fanfairSystemsInc/AmplifyPhpClient.git"
+      "url": "https://github.com/iQXCorp/AmplifyPhpClient.git"
     }
   ],
   "require": {
-    "fanfairSystemsInc/AmplifyPhpClient": "*@dev"
+    "iQXCorp/AmplifyPhpClient": "*@dev"
   }
 }
 ```
@@ -84,44 +84,38 @@ Class | Method | HTTP request | Description
 *CustomersApi* | [**createOrUpdateCustomer**](docs/Api/CustomersApi.md#createorupdatecustomer) | **POST** /customers/ | Create or Update a customer
 *CustomersApi* | [**findCustomers**](docs/Api/CustomersApi.md#findcustomers) | **GET** /customers/ | Retrieve all customers
 *CustomersApi* | [**findCustomersById**](docs/Api/CustomersApi.md#findcustomersbyid) | **GET** /customers/{id} | Retrieve a single customer by id
-*EventTicketsApi* | [**createOrUpdateTicketClass**](docs/Api/EventTicketsApi.md#createorupdateticketclass) | **POST** /events/{id}/ticket_classes/ | Create or Update a event ticket
-*EventTicketsApi* | [**findTicketClass**](docs/Api/EventTicketsApi.md#findticketclass) | **GET** /events/{id}/ticket_classes/ | Retrieve all tickets for an event
-*EventTicketsApi* | [**findTicketClassById**](docs/Api/EventTicketsApi.md#findticketclassbyid) | **GET** /events/{id}/ticket_classes/{ticket_class_id}/ | Retrieve a single event ticket by id
-*EventsApi* | [**createOrUpdateEvent**](docs/Api/EventsApi.md#createorupdateevent) | **POST** /events/ | Create or Update a event
-*EventsApi* | [**findEvents**](docs/Api/EventsApi.md#findevents) | **GET** /events/ | Retrieve all events
-*EventsApi* | [**findEventsById**](docs/Api/EventsApi.md#findeventsbyid) | **GET** /events/{id} | Retrieve a single event by id
 *OrdersApi* | [**createOrUpdateOrder**](docs/Api/OrdersApi.md#createorupdateorder) | **POST** /orders/ | Create or Update a order
 *OrdersApi* | [**findOrders**](docs/Api/OrdersApi.md#findorders) | **GET** /orders/ | Retrieve all orders
 *OrdersApi* | [**findOrdersById**](docs/Api/OrdersApi.md#findordersbyid) | **GET** /orders/{id} | Retrieve a single order by id
 *ProductsApi* | [**createOrUpdateProduct**](docs/Api/ProductsApi.md#createorupdateproduct) | **POST** /products/ | Create or Update a product
 *ProductsApi* | [**findProducts**](docs/Api/ProductsApi.md#findproducts) | **GET** /products/ | Retrieve all products
 *ProductsApi* | [**findProductsById**](docs/Api/ProductsApi.md#findproductsbyid) | **GET** /products/{id} | Retrieve a single product by id
-*StoresApi* | [**createOrUpdateStore**](docs/Api/StoresApi.md#createorupdatestore) | **POST** /stores/ | Create or update a store
-*StoresApi* | [**findStores**](docs/Api/StoresApi.md#findstores) | **GET** /stores/ | Retrieve all stores
-*StoresApi* | [**findStoresById**](docs/Api/StoresApi.md#findstoresbyid) | **GET** /stores/{id} | Retrieve a single store by id
-*TicketsApi* | [**createOrUpdateTicket**](docs/Api/TicketsApi.md#createorupdateticket) | **POST** /tickets/ | Create or Update a ticket
-*TicketsApi* | [**findTickets**](docs/Api/TicketsApi.md#findtickets) | **GET** /tickets/ | Retrieve all events
-*TicketsApi* | [**findTicketsById**](docs/Api/TicketsApi.md#findticketsbyid) | **GET** /tickets/{id} | Retrieve a single ticket by id
-*UserEventsApi* | [**processUserEvent**](docs/Api/UserEventsApi.md#processuserevent) | **POST** /user-event/ | Process webhooks
 
 
 ## Documentation For Models
 
  - [Customer](docs/Model/Customer.md)
+ - [Customers](docs/Model/Customers.md)
  - [ErrorResponse](docs/Model/ErrorResponse.md)
  - [Event](docs/Model/Event.md)
  - [EventVenue](docs/Model/EventVenue.md)
+ - [Events](docs/Model/Events.md)
  - [Order](docs/Model/Order.md)
  - [OrderAttributes](docs/Model/OrderAttributes.md)
  - [OrderLineItems](docs/Model/OrderLineItems.md)
+ - [Orders](docs/Model/Orders.md)
+ - [Pagination](docs/Model/Pagination.md)
  - [Product](docs/Model/Product.md)
  - [ProductAttributes](docs/Model/ProductAttributes.md)
  - [ProductVariants](docs/Model/ProductVariants.md)
+ - [Products](docs/Model/Products.md)
  - [Store](docs/Model/Store.md)
  - [Ticket](docs/Model/Ticket.md)
  - [TicketClass](docs/Model/TicketClass.md)
  - [TicketClassAvailability](docs/Model/TicketClassAvailability.md)
+ - [TicketClasses](docs/Model/TicketClasses.md)
  - [TicketLocation](docs/Model/TicketLocation.md)
+ - [Tickets](docs/Model/Tickets.md)
  - [UserEvent](docs/Model/UserEvent.md)
  - [UserEventResponse](docs/Model/UserEventResponse.md)
 
