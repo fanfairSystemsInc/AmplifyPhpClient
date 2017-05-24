@@ -183,12 +183,13 @@ class CustomersApi
      *
      * Retrieve all customers
      *
+     * @param float $page The page number ro return (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\Customer[]
+     * @return \Swagger\Client\Model\Customers
      */
-    public function findCustomers()
+    public function findCustomers($page = null)
     {
-        list($response) = $this->findCustomersWithHttpInfo();
+        list($response) = $this->findCustomersWithHttpInfo($page);
         return $response;
     }
 
@@ -197,10 +198,11 @@ class CustomersApi
      *
      * Retrieve all customers
      *
+     * @param float $page The page number ro return (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\Customer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\Customers, HTTP status code, HTTP response headers (array of strings)
      */
-    public function findCustomersWithHttpInfo()
+    public function findCustomersWithHttpInfo($page = null)
     {
         // parse inputs
         $resourcePath = "/customers/";
@@ -214,6 +216,10 @@ class CustomersApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/json']);
 
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = $this->apiClient->getSerializer()->toQueryValue($page);
+        }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
 
@@ -237,15 +243,15 @@ class CustomersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\Customer[]',
+                '\Swagger\Client\Model\Customers',
                 '/customers/'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\Customer[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\Customers', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Customer[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Customers', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:

@@ -1,6 +1,6 @@
 # Swagger\Client\OrdersApi
 
-All URIs are relative to *https://public-api.iqxamplify.com/V1*
+All URIs are relative to *http://localhost:3005/V1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findOrders**
-> \Swagger\Client\Model\Order[] findOrders()
+> \Swagger\Client\Model\Orders findOrders($page)
 
 Retrieve all orders
 
@@ -77,9 +77,10 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('authorizatio
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\OrdersApi();
+$page = 3.4; // float | The page number ro return
 
 try {
-    $result = $api_instance->findOrders();
+    $result = $api_instance->findOrders($page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OrdersApi->findOrders: ', $e->getMessage(), PHP_EOL;
@@ -88,11 +89,14 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **float**| The page number ro return | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Order[]**](../Model/Order.md)
+[**\Swagger\Client\Model\Orders**](../Model/Orders.md)
 
 ### Authorization
 

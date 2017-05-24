@@ -1,6 +1,6 @@
 # Swagger\Client\EventTicketsApi
 
-All URIs are relative to *https://public-api.iqxamplify.com/V1*
+All URIs are relative to *http://localhost:3005/V1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
