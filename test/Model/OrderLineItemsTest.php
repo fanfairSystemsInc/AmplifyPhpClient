@@ -83,9 +83,73 @@ class OrderLineItemsTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "attributes"
+     * Test attribute "fulfillable_quantity"
      */
-    public function testPropertyAttributes()
+    public function testPropertyFulfillableQuantity()
+    {
+
+    }
+
+    /**
+     * Test attribute "price"
+     */
+    public function testPropertyPrice()
+    {
+
+    }
+
+    /**
+     * Test attribute "order_price"
+     */
+    public function testPropertyOrderPrice()
+    {
+
+    }
+
+    /**
+     * Test attribute "sku"
+     */
+    public function testPropertySku()
+    {
+
+    }
+
+    /**
+     * Test attribute "name"
+     */
+    public function testPropertyName()
+    {
+
+    }
+
+    /**
+     * Test attribute "title"
+     */
+    public function testPropertyTitle()
+    {
+
+    }
+
+    /**
+     * Test attribute "quantity"
+     */
+    public function testPropertyQuantity()
+    {
+
+    }
+
+    /**
+     * Test attribute "grams"
+     */
+    public function testPropertyGrams()
+    {
+
+    }
+
+    /**
+     * Test attribute "requires_shipping"
+     */
+    public function testPropertyRequiresShipping()
     {
 
     }

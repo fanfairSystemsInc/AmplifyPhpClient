@@ -163,6 +163,14 @@ class CustomerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "activation_date"
+     */
+    public function testPropertyActivationDate()
+    {
+
+    }
+
+    /**
      * Test attribute "modified_date"
      */
     public function testPropertyModifiedDate()
