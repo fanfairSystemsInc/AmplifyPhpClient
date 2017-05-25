@@ -55,7 +55,7 @@ class Order implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'customer_ref_id' => 'string',
+        'contact_ref_id' => 'string',
         'financial_status' => 'string',
         'iqx_order' => 'string',
         'line_items' => '\Swagger\Client\Model\OrderLineItems[]',
@@ -79,7 +79,7 @@ class Order implements ArrayAccess
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'customer_ref_id' => 'customer_ref_id',
+        'contact_ref_id' => 'contact_ref_id',
         'financial_status' => 'financial_status',
         'iqx_order' => 'iqx_order',
         'line_items' => 'line_items',
@@ -99,7 +99,7 @@ class Order implements ArrayAccess
      */
     protected static $setters = [
         'id' => 'setId',
-        'customer_ref_id' => 'setCustomerRefId',
+        'contact_ref_id' => 'setContactRefId',
         'financial_status' => 'setFinancialStatus',
         'iqx_order' => 'setIqxOrder',
         'line_items' => 'setLineItems',
@@ -119,7 +119,7 @@ class Order implements ArrayAccess
      */
     protected static $getters = [
         'id' => 'getId',
-        'customer_ref_id' => 'getCustomerRefId',
+        'contact_ref_id' => 'getContactRefId',
         'financial_status' => 'getFinancialStatus',
         'iqx_order' => 'getIqxOrder',
         'line_items' => 'getLineItems',
@@ -164,7 +164,7 @@ class Order implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['customer_ref_id'] = isset($data['customer_ref_id']) ? $data['customer_ref_id'] : null;
+        $this->container['contact_ref_id'] = isset($data['contact_ref_id']) ? $data['contact_ref_id'] : null;
         $this->container['financial_status'] = isset($data['financial_status']) ? $data['financial_status'] : null;
         $this->container['iqx_order'] = isset($data['iqx_order']) ? $data['iqx_order'] : null;
         $this->container['line_items'] = isset($data['line_items']) ? $data['line_items'] : null;
@@ -224,22 +224,22 @@ class Order implements ArrayAccess
     }
 
     /**
-     * Gets customer_ref_id
+     * Gets contact_ref_id
      * @return string
      */
-    public function getCustomerRefId()
+    public function getContactRefId()
     {
-        return $this->container['customer_ref_id'];
+        return $this->container['contact_ref_id'];
     }
 
     /**
-     * Sets customer_ref_id
-     * @param string $customer_ref_id Customers reference id
+     * Sets contact_ref_id
+     * @param string $contact_ref_id Contact reference id
      * @return $this
      */
-    public function setCustomerRefId($customer_ref_id)
+    public function setContactRefId($contact_ref_id)
     {
-        $this->container['customer_ref_id'] = $customer_ref_id;
+        $this->container['contact_ref_id'] = $contact_ref_id;
 
         return $this;
     }

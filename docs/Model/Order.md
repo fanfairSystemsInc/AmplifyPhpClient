@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | Primary key | [optional] 
-**customer_ref_id** | **string** | Customers reference id | [optional] 
+**contact_ref_id** | **string** | Contact reference id | [optional] 
 **financial_status** | **string** | Financial status of the order | [optional] 
 **iqx_order** | **string** | iqx internal order id | [optional] 
 **line_items** | [**\Swagger\Client\Model\OrderLineItems[]**](OrderLineItems.md) | The individual line items of the order | [optional] 

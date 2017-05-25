@@ -91,9 +91,9 @@ class OrderTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "customer_ref_id"
+     * Test attribute "contact_ref_id"
      */
-    public function testPropertyCustomerRefId()
+    public function testPropertyContactRefId()
     {
 
     }
