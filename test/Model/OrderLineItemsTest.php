@@ -99,6 +99,22 @@ class OrderLineItemsTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "product_ref_id"
+     */
+    public function testPropertyProductRefId()
+    {
+
+    }
+
+    /**
+     * Test attribute "ref_id"
+     */
+    public function testPropertyRefId()
+    {
+
+    }
+
+    /**
      * Test attribute "order_price"
      */
     public function testPropertyOrderPrice()

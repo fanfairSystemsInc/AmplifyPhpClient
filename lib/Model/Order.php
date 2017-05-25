@@ -60,7 +60,7 @@ class Order implements ArrayAccess
         'iqx_order' => 'string',
         'line_items' => '\Swagger\Client\Model\OrderLineItems[]',
         'processed_at' => '\DateTime',
-        'ref_id' => 'float',
+        'ref_id' => 'string',
         'subtotal_price' => 'float',
         'total_price' => 'float',
         'total_shipping' => 'float',
@@ -330,7 +330,7 @@ class Order implements ArrayAccess
 
     /**
      * Gets ref_id
-     * @return float
+     * @return string
      */
     public function getRefId()
     {
@@ -339,7 +339,7 @@ class Order implements ArrayAccess
 
     /**
      * Sets ref_id
-     * @param float $ref_id The Order reference number
+     * @param string $ref_id The Order reference number
      * @return $this
      */
     public function setRefId($ref_id)

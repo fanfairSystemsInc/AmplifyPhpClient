@@ -5,6 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **fulfillable_quantity** | **float** | The qunatity of the line item | [optional] 
 **price** | **float** | The price of the line item | [optional] 
+**product_ref_id** | **string** | The Product&#39;s reference id | [optional] 
+**ref_id** | **string** | The order&#39;s reference id | [optional] 
 **order_price** | **float** | The order price for theline item | [optional] 
 **sku** | **string** | Product&#39;s sku | [optional] 
 **name** | **string** | Product&#39;s name | [optional] 

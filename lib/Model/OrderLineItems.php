@@ -57,6 +57,8 @@ class OrderLineItems implements ArrayAccess
     protected static $swaggerTypes = [
         'fulfillable_quantity' => 'float',
         'price' => 'float',
+        'product_ref_id' => 'string',
+        'ref_id' => 'string',
         'order_price' => 'float',
         'sku' => 'string',
         'name' => 'string',
@@ -78,6 +80,8 @@ class OrderLineItems implements ArrayAccess
     protected static $attributeMap = [
         'fulfillable_quantity' => 'fulfillable_quantity',
         'price' => 'price',
+        'product_ref_id' => 'product_ref_id',
+        'ref_id' => 'ref_id',
         'order_price' => 'order_price',
         'sku' => 'sku',
         'name' => 'name',
@@ -95,6 +99,8 @@ class OrderLineItems implements ArrayAccess
     protected static $setters = [
         'fulfillable_quantity' => 'setFulfillableQuantity',
         'price' => 'setPrice',
+        'product_ref_id' => 'setProductRefId',
+        'ref_id' => 'setRefId',
         'order_price' => 'setOrderPrice',
         'sku' => 'setSku',
         'name' => 'setName',
@@ -112,6 +118,8 @@ class OrderLineItems implements ArrayAccess
     protected static $getters = [
         'fulfillable_quantity' => 'getFulfillableQuantity',
         'price' => 'getPrice',
+        'product_ref_id' => 'getProductRefId',
+        'ref_id' => 'getRefId',
         'order_price' => 'getOrderPrice',
         'sku' => 'getSku',
         'name' => 'getName',
@@ -154,6 +162,8 @@ class OrderLineItems implements ArrayAccess
     {
         $this->container['fulfillable_quantity'] = isset($data['fulfillable_quantity']) ? $data['fulfillable_quantity'] : null;
         $this->container['price'] = isset($data['price']) ? $data['price'] : null;
+        $this->container['product_ref_id'] = isset($data['product_ref_id']) ? $data['product_ref_id'] : null;
+        $this->container['ref_id'] = isset($data['ref_id']) ? $data['ref_id'] : null;
         $this->container['order_price'] = isset($data['order_price']) ? $data['order_price'] : null;
         $this->container['sku'] = isset($data['sku']) ? $data['sku'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
@@ -226,6 +236,48 @@ class OrderLineItems implements ArrayAccess
     public function setPrice($price)
     {
         $this->container['price'] = $price;
+
+        return $this;
+    }
+
+    /**
+     * Gets product_ref_id
+     * @return string
+     */
+    public function getProductRefId()
+    {
+        return $this->container['product_ref_id'];
+    }
+
+    /**
+     * Sets product_ref_id
+     * @param string $product_ref_id The Product's reference id
+     * @return $this
+     */
+    public function setProductRefId($product_ref_id)
+    {
+        $this->container['product_ref_id'] = $product_ref_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets ref_id
+     * @return string
+     */
+    public function getRefId()
+    {
+        return $this->container['ref_id'];
+    }
+
+    /**
+     * Sets ref_id
+     * @param string $ref_id The order's reference id
+     * @return $this
+     */
+    public function setRefId($ref_id)
+    {
+        $this->container['ref_id'] = $ref_id;
 
         return $this;
     }
