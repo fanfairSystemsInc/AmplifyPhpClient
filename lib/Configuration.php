@@ -630,9 +630,9 @@ class Configuration
     {
         $this->sandboxMode = $sandboxMode;
         if ($sandboxMode == true) {
-          $host = 'https://sandbox-public-api.iqxamplify.com/V1';
+          $this->host = 'https://sandbox-public-api.iqxamplify.com/V1';
         } else {
-          $host = 'https://public-api.iqxamplify.com/V1';
+          $this->host = 'https://public-api.iqxamplify.com/V1';
         }
         return $this;
     }
