@@ -64,6 +64,7 @@ class Customer implements ArrayAccess
         'email' => 'string',
         'first_name' => 'string',
         'last_name' => 'string',
+        'activation_date' => '\DateTime',
         'modified_date' => '\DateTime',
         'orders_count' => 'float',
         'phone' => 'string',
@@ -100,6 +101,7 @@ class Customer implements ArrayAccess
         'email' => 'email',
         'first_name' => 'first_name',
         'last_name' => 'last_name',
+        'activation_date' => 'activation_date',
         'modified_date' => 'modified_date',
         'orders_count' => 'orders_count',
         'phone' => 'phone',
@@ -132,6 +134,7 @@ class Customer implements ArrayAccess
         'email' => 'setEmail',
         'first_name' => 'setFirstName',
         'last_name' => 'setLastName',
+        'activation_date' => 'setActivationDate',
         'modified_date' => 'setModifiedDate',
         'orders_count' => 'setOrdersCount',
         'phone' => 'setPhone',
@@ -164,6 +167,7 @@ class Customer implements ArrayAccess
         'email' => 'getEmail',
         'first_name' => 'getFirstName',
         'last_name' => 'getLastName',
+        'activation_date' => 'getActivationDate',
         'modified_date' => 'getModifiedDate',
         'orders_count' => 'getOrdersCount',
         'phone' => 'getPhone',
@@ -221,6 +225,7 @@ class Customer implements ArrayAccess
         $this->container['email'] = isset($data['email']) ? $data['email'] : null;
         $this->container['first_name'] = isset($data['first_name']) ? $data['first_name'] : null;
         $this->container['last_name'] = isset($data['last_name']) ? $data['last_name'] : null;
+        $this->container['activation_date'] = isset($data['activation_date']) ? $data['activation_date'] : null;
         $this->container['modified_date'] = isset($data['modified_date']) ? $data['modified_date'] : null;
         $this->container['orders_count'] = isset($data['orders_count']) ? $data['orders_count'] : null;
         $this->container['phone'] = isset($data['phone']) ? $data['phone'] : null;
@@ -468,6 +473,27 @@ class Customer implements ArrayAccess
     public function setLastName($last_name)
     {
         $this->container['last_name'] = $last_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets activation_date
+     * @return \DateTime
+     */
+    public function getActivationDate()
+    {
+        return $this->container['activation_date'];
+    }
+
+    /**
+     * Sets activation_date
+     * @param \DateTime $activation_date Date customer was activated
+     * @return $this
+     */
+    public function setActivationDate($activation_date)
+    {
+        $this->container['activation_date'] = $activation_date;
 
         return $this;
     }

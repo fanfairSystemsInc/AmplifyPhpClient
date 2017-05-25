@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **email** | **string** | The Customer&#39;s Email Address | [optional] 
 **first_name** | **string** | The Customer&#39;s First Name | [optional] 
 **last_name** | **string** | The Customer&#39;s Last Name | [optional] 
+**activation_date** | [**\DateTime**](\DateTime.md) | Date customer was activated | [optional] 
 **modified_date** | [**\DateTime**](\DateTime.md) | Date last modified | [optional] 
 **orders_count** | **float** | Total number of orders | [optional] 
 **phone** | **string** | The Customer&#39;s Phone Number | [optional] 

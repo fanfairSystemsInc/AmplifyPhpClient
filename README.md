@@ -97,11 +97,7 @@ Class | Method | HTTP request | Description
  - [Customer](docs/Model/Customer.md)
  - [Customers](docs/Model/Customers.md)
  - [ErrorResponse](docs/Model/ErrorResponse.md)
- - [Event](docs/Model/Event.md)
- - [EventVenue](docs/Model/EventVenue.md)
- - [Events](docs/Model/Events.md)
  - [Order](docs/Model/Order.md)
- - [OrderAttributes](docs/Model/OrderAttributes.md)
  - [OrderLineItems](docs/Model/OrderLineItems.md)
  - [Orders](docs/Model/Orders.md)
  - [Pagination](docs/Model/Pagination.md)
@@ -109,15 +105,6 @@ Class | Method | HTTP request | Description
  - [ProductAttributes](docs/Model/ProductAttributes.md)
  - [ProductVariants](docs/Model/ProductVariants.md)
  - [Products](docs/Model/Products.md)
- - [Store](docs/Model/Store.md)
- - [Ticket](docs/Model/Ticket.md)
- - [TicketClass](docs/Model/TicketClass.md)
- - [TicketClassAvailability](docs/Model/TicketClassAvailability.md)
- - [TicketClasses](docs/Model/TicketClasses.md)
- - [TicketLocation](docs/Model/TicketLocation.md)
- - [Tickets](docs/Model/Tickets.md)
- - [UserEvent](docs/Model/UserEvent.md)
- - [UserEventResponse](docs/Model/UserEventResponse.md)
 
 
 ## Documentation For Authorization
@@ -133,3 +120,5 @@ Class | Method | HTTP request | Description
 ## Author
 
 development@iqxcorp.com
+
+
